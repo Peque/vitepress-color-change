@@ -5,6 +5,8 @@
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
+    "docs:build:red": "VITE_COLOR=red vitepress build",
+    "docs:build:blue": "VITE_COLOR=blue vitepress build",
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {

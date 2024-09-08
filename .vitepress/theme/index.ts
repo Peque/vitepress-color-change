@@ -2,7 +2,9 @@
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import './style.css'
+
+const color = process.env.VITE_COLOR
+import(`./style/${color}.css`)
 
 export default {
   extends: DefaultTheme,
